@@ -1,0 +1,6 @@
+ld/*
+CVS*
+*.class
+*.o
+*~
+*.gch
