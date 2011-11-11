@@ -409,6 +409,9 @@ public class JSysVMsgQueue
       {
          logger.error("Could not find native/lib/libmsgctl-{arch}.so. " +
                        "size() method will not be available", e);
+         System.err.println("Could not find native/lib/libmsgctl-{arch}.so. " +
+                            "size() method will not be available (" + e.getMessage() + ")");
+         e.printStackTrace(System.err);
          mIsMsgCtlAvail = false;
          return -1;
       }
